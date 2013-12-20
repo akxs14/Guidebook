@@ -17,8 +17,6 @@ Guidebook.service('NoteModel', function() {
     };
     var chapter = JSON.parse(window.localStorage.getItem(chapterId));
 
-    getItem(chapterId);
-
     if(!chapter) {
       chapter = {
         id: chapterId,
