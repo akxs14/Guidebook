@@ -13,3 +13,12 @@ Guidebook.controller('AddNoteController',
     };
   }
 );
+
+Guidebook.controller('DeleteNoteController',
+  function($scope, $location, $routeParams, NoteModel) {
+
+    var chapterId = $routeParams.chapterId;
+    NoteModel.deleteNote(chapterId, $routeParams.noteId);
+    $location.path('/chapter/' + chapterId);
+  }
+);
