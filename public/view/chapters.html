@@ -1,5 +1,5 @@
 <ul>
-  <li ng-repeat='chapter in chapters | orderBy:"title"'>
+  <li ng-repeat='chapter in chapters | orderBy:"title"' ng-class-even='"even"' ng-class-odd='"odd"'>
     <h2>{{chapter.title}}</h2>
     <p>{{chapter.summary}}</p>
     <p>
