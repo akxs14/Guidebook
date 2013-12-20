@@ -14,7 +14,7 @@ Guidebook.controller('ChaptersController',
         var confirmDelete = confirm('Are you sure you want to delete this note?');
 
         if(confirmDelete) {
-          $location.path('/deleteNote' + $routeParams.chapterId + '/' + noteId);
+          $location.path('/deleteNote/' + $routeParams.chapterId + '/' + noteId);
         }
       };
   }
